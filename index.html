@@ -207,292 +207,188 @@
 
 </body>
 </html>
-```
 
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>India Top Colleges Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-# style.css
-
-```css
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
+<style>
 body{
-  font-family:Arial, sans-serif;
-  background:#0f172a;
-  color:white;
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
 }
 
 header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 8%;
-  background:#111827;
-  position:sticky;
-  top:0;
+background:#0b3d91;
+color:white;
+padding:20px;
+text-align:center;
 }
 
-.logo{
-  font-size:28px;
-  font-weight:bold;
-  color:#38bdf8;
-}
-
-nav a{
-  text-decoration:none;
-  color:white;
-  margin-left:20px;
-  font-size:17px;
-}
-
-.hero{
-  height:90vh;
-  background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-  url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop');
-  background-size:cover;
-  background-position:center;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.hero-content h1{
-  font-size:55px;
-  margin-bottom:20px;
-}
-
-.hero-content p{
-  max-width:800px;
-  margin:auto;
-  font-size:20px;
-  line-height:1.7;
-}
-
-.hero button{
-  margin-top:30px;
-  padding:14px 35px;
-  border:none;
-  border-radius:10px;
-  background:#38bdf8;
-  color:white;
-  font-size:18px;
-}
-
-.search-section{
-  padding:70px 8%;
-  text-align:center;
-}
-
-.search-section input{
-  width:80%;
-  max-width:700px;
-  padding:18px;
-  border-radius:10px;
-  border:none;
-  margin-top:20px;
-}
-
-.college-section{
-  padding:80px 8%;
-}
-
-.college-section h2,
-.compare-section h2,
-.courses-section h2,
-.faculty-section h2{
-  text-align:center;
-  margin-bottom:50px;
-  font-size:40px;
-}
-
-.college-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:30px;
+.section{
+padding:20px;
 }
 
 .card{
-  background:#1e293b;
-  border-radius:15px;
-  overflow:hidden;
+background:white;
+margin:15px 0;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
 }
 
-.card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
+img{
+width:100%;
+max-height:220px;
+object-fit:cover;
+border-radius:10px;
 }
 
-.card-content{
-  padding:25px;
+h2{
+color:#0b3d91;
 }
 
-.card-content h3{
-  margin-bottom:15px;
-  color:#38bdf8;
+.badge{
+background:#0b3d91;
+color:white;
+padding:5px 10px;
+border-radius:5px;
+font-size:12px;
+display:inline-block;
+margin:5px 0;
 }
 
-.card-content p{
-  margin-bottom:10px;
-}
-
-.card button{
-  margin-top:15px;
-  padding:10px 25px;
-  border:none;
-  border-radius:10px;
-  background:#38bdf8;
-  color:white;
-}
-
-.compare-section{
-  padding:80px 8%;
-  background:#111827;
-}
-
-.compare-box{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:30px;
-  flex-wrap:wrap;
-}
-
-.compare-card{
-  background:#1e293b;
-  padding:30px;
-  border-radius:15px;
-  width:320px;
-}
-
-.compare-card ul{
-  margin-top:20px;
-}
-
-.compare-card li{
-  margin-bottom:12px;
-}
-
-.vs{
-  font-size:40px;
-  font-weight:bold;
-  color:#38bdf8;
-}
-
-.courses-section{
-  padding:80px 8%;
-}
-
-.course-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-
-.course-card{
-  background:#1e293b;
-  padding:30px;
-  border-radius:15px;
-}
-
-.faculty-section{
-  padding:80px 8%;
-  background:#111827;
-}
-
-.faculty-box{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:30px;
-}
-
-.faculty-card{
-  background:#1e293b;
-  padding:30px;
-  border-radius:15px;
+.compare{
+background:#fff3cd;
+padding:10px;
+border-left:5px solid #ffc107;
+margin-top:10px;
 }
 
 footer{
-  text-align:center;
-  padding:40px;
-  background:#020617;
+text-align:center;
+padding:15px;
+background:#222;
+color:white;
 }
+</style>
 
-footer h2{
-  margin-bottom:15px;
-  color:#38bdf8;
-}
+</head>
 
-@media(max-width:768px){
+<body>
 
-  header{
-    flex-direction:column;
-  }
+<header>
+<h1>India Top Colleges Guide</h1>
+<p>IIT | NIT | AIIMS | MBBS | Universities</p>
+</header>
 
-  nav{
-    margin-top:15px;
-  }
+<div class="section">
 
-  .hero-content h1{
-    font-size:36px;
-  }
+<h2>🏆 Top IIT Colleges</h2>
 
-  .hero-content p{
-    font-size:17px;
-    padding:0 20px;
-  }
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/IIT_Bombay_Main_Building.jpg">
+<h3>IIT Bombay</h3>
+<span class="badge">Maharashtra</span>
+<p>Courses: B.Tech, M.Tech, PhD</p>
+<p>Fees: ₹2–2.5 Lakh/year</p>
+<p>JEE Advanced Rank: Top 500</p>
 
-}
-```
+<div class="compare">
+Comparison: IIT Bombay vs IIT Delhi → IIT Bombay best for Coding & Placements
+</div>
+</div>
 
----
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/IIT_Delhi_Main_Building.jpg">
+<h3>IIT Delhi</h3>
+<span class="badge">Delhi</span>
+<p>Courses: Engineering, AI, Research</p>
+<p>Fees: ₹2–2.5 Lakh/year</p>
+<p>JEE Advanced Rank: Top 500</p>
+</div>
 
-# GitHub Upload Process
+<hr>
 
-1. Create these 2 files:
+<h2>⚙️ Top NIT Colleges</h2>
 
-* index.html
-* style.css
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/NIT_Trichy_Main_Building.jpg">
+<h3>NIT Trichy</h3>
+<span class="badge">Tamil Nadu</span>
+<p>Courses: B.Tech, M.Tech</p>
+<p>Fees: ₹1.5–2 Lakh/year</p>
+<p>JEE Main Rank: Top 5000</p>
+</div>
 
-2. Upload both files to GitHub repository.
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/NIT_Warangal_Main_Building.jpg">
+<h3>NIT Warangal</h3>
+<span class="badge">Telangana</span>
+<p>Courses: Engineering, CSE, ECE</p>
+<p>Fees: ₹1.5 Lakh/year</p>
+<p>JEE Main Rank: Top 6000</p>
+</div>
 
-3. GitHub → Settings → Pages
+<hr>
 
-4. Select:
+<h2>🩺 Top AIIMS Colleges</h2>
 
-* Deploy from branch
-* main branch
-* /(root)
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/AIIMS_Delhi.jpg">
+<h3>AIIMS Delhi</h3>
+<span class="badge">Delhi</span>
+<p>Course: MBBS, Nursing, Research</p>
+<p>Fees: ₹6,000/year (approx)</p>
+<p>NEET Rank: Top 50</p>
 
-5. Save.
+<div class="compare">
+AIIMS Delhi vs Other AIIMS → Delhi best for Medicine & Research
+</div>
+</div>
 
-6. Wait 1–2 minutes.
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/AIIMS_Bhubaneswar.jpg">
+<h3>AIIMS Bhubaneswar</h3>
+<span class="badge">Odisha</span>
+<p>Course: MBBS</p>
+<p>Fees: ₹10,000–₹30,000/year</p>
+<p>NEET Rank: Top 1000</p>
+</div>
 
-7. Website Link:
+<hr>
 
-[https://yourusername.github.io/](https://yourusername.github.io/)
+<h2>🏥 Top MBBS Private Colleges</h2>
 
----
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/KMC_Manipal.jpg">
+<h3>KMC Manipal</h3>
+<span class="badge">Karnataka</span>
+<p>Course: MBBS</p>
+<p>Fees: ₹20–25 Lakh/year</p>
+<p>NEET Rank: 20,000–50,000</p>
+</div>
 
-# Future Features You Can Add
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/CMC_Vellore.jpg">
+<h3>CMC Vellore</h3>
+<span class="badge">Tamil Nadu</span>
+<p>Course: MBBS</p>
+<p>Fees: Very Low (₹50k approx)</p>
+<p>NEET Rank: Top 200</p>
+</div>
 
-* AI College Recommendation
-* Login System
-* Student Dashboard
-* College Ranking Filter
-* AI Chatbot
-* Compare Unlimited Colleges
-* JEE/NEET Rank Predictor
-* College Cutoff Database
-* Hostel Information
-* Scholarship Section
-* Online Counseling
-* Dark Mode
-* Mobile App
-*
+</div>
+
+<footer>
+© 2026 College Hub India | Made for Education Purpose
+</footer>
+
+</body>
+</html>
