@@ -1,23 +1,498 @@
-<!doctype html>
+# CollegeHub India – Complete IIT/NIT/AIIMS College Website
+
+## index.html
+
+```html
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CollegeHub India - Find Top IIT, NIT, NEET Colleges Across India</title>
-    <meta name="description" content="Discover top colleges in India - IIT, NIT, NEET, BSc &amp; MSc colleges. Browse state-wise listings, compare rankings, and find your dream college." />
-    <meta name="keywords" content="IIT colleges, NIT colleges, NEET colleges, medical colleges, engineering colleges, Indian colleges, BSc colleges, MSc colleges, state wise colleges" />
-    <meta name="author" content="CollegeHub India" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="CollegeHub India - Find Top Colleges Across India" />
-    <meta property="og:description" content="Discover top colleges in India - IIT, NIT, NEET, BSc &amp; MSc. State-wise listings and comprehensive college information." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CollegeHub India - Find Top Colleges" />
-    <meta name="twitter:description" content="Discover IIT, NIT, NEET, BSc &amp; MSc colleges across India" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CollegeHub India</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">CollegeHub India</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#colleges">Colleges</a>
+      <a href="#compare">Compare</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>India's Biggest IIT, NIT & AIIMS Information Platform</h1>
+
+      <p>
+        Find Fees, Placements, Rankings, Campus Area, Faculty,
+        Admission Cutoff, BSc Nursing, MSc, IIT, NIT & AIIMS Information.
+      </p>
+
+      <button>Explore Colleges</button>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <h2>Search Your Dream College</h2>
+
+    <input type="text" placeholder="Search IIT, NIT, AIIMS..." />
+  </section>
+
+  <section class="college-section" id="colleges">
+
+    <h2>Top Indian Colleges</h2>
+
+    <div class="college-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1200&auto=format&fit=crop" alt="IIT Bombay">
+
+        <div class="card-content">
+          <h3>IIT Bombay</h3>
+
+          <p><strong>Location:</strong> Mumbai, Maharashtra</p>
+          <p><strong>NIRF Rank:</strong> 3</p>
+          <p><strong>Annual Fees:</strong> ₹2.3 Lakhs</p>
+          <p><strong>Average Placement:</strong> ₹23 LPA</p>
+          <p><strong>Campus Area:</strong> 550 Acres</p>
+          <p><strong>Top Courses:</strong> CSE, AI, Mechanical</p>
+          <p><strong>JEE Advanced Rank:</strong> Under 1000</p>
+
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop" alt="IIT Delhi">
+
+        <div class="card-content">
+          <h3>IIT Delhi</h3>
+
+          <p><strong>Location:</strong> New Delhi</p>
+          <p><strong>NIRF Rank:</strong> 2</p>
+          <p><strong>Annual Fees:</strong> ₹2.5 Lakhs</p>
+          <p><strong>Average Placement:</strong> ₹25 LPA</p>
+          <p><strong>Campus Area:</strong> 320 Acres</p>
+          <p><strong>Top Courses:</strong> AI, Data Science</p>
+          <p><strong>JEE Advanced Rank:</strong> Under 500</p>
+
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop" alt="AIIMS Delhi">
+
+        <div class="card-content">
+          <h3>AIIMS Delhi</h3>
+
+          <p><strong>Location:</strong> New Delhi</p>
+          <p><strong>NIRF Rank:</strong> 1 Medical</p>
+          <p><strong>Annual Fees:</strong> ₹10,000</p>
+          <p><strong>Placement:</strong> Excellent</p>
+          <p><strong>Campus Area:</strong> 213 Acres</p>
+          <p><strong>Top Courses:</strong> MBBS, BSc Nursing, MSc</p>
+          <p><strong>NEET Rank:</strong> Under 100</p>
+
+          <button>View Details</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="compare-section" id="compare">
+
+    <h2>Compare Colleges</h2>
+
+    <div class="compare-box">
+
+      <div class="compare-card">
+        <h3>IIT Bombay</h3>
+        <ul>
+          <li>Fees: ₹2.3L</li>
+          <li>Placement: ₹23 LPA</li>
+          <li>Hostel: Available</li>
+          <li>Top Branch: CSE</li>
+          <li>Rank: 3</li>
+        </ul>
+      </div>
+
+      <div class="vs">VS</div>
+
+      <div class="compare-card">
+        <h3>IIT Delhi</h3>
+        <ul>
+          <li>Fees: ₹2.5L</li>
+          <li>Placement: ₹25 LPA</li>
+          <li>Hostel: Available</li>
+          <li>Top Branch: AI</li>
+          <li>Rank: 2</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="courses-section" id="courses">
+
+    <h2>Popular Courses</h2>
+
+    <div class="course-grid">
+
+      <div class="course-card">
+        <h3>BSc Nursing</h3>
+        <p>AIIMS & top nursing colleges information.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>MSc</h3>
+        <p>Science & research based programs.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>BTech</h3>
+        <p>IIT & NIT engineering programs.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>MBBS</h3>
+        <p>Top medical colleges and AIIMS details.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="faculty-section">
+
+    <h2>Faculty & Research</h2>
+
+    <div class="faculty-box">
+      <div class="faculty-card">
+        <h3>Top Professors</h3>
+        <p>
+          Information about faculty qualifications,
+          research papers and teaching experience.
+        </p>
+      </div>
+
+      <div class="faculty-card">
+        <h3>Research Labs</h3>
+        <p>
+          AI Labs, Robotics Labs, Medical Research Centers,
+          Innovation Hubs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+
+    <h2>CollegeHub India</h2>
+
+    <p>
+      India's College Information Hub
+    </p>
+
+    <p>Email: support@collegehubindia.com</p>
+
+  </footer>
+
+</body>
 </html>
+```
+
+---
+
+# style.css
+
+```css
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#0f172a;
+  color:white;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:#111827;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  color:#38bdf8;
+}
+
+nav a{
+  text-decoration:none;
+  color:white;
+  margin-left:20px;
+  font-size:17px;
+}
+
+.hero{
+  height:90vh;
+  background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-content h1{
+  font-size:55px;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  max-width:800px;
+  margin:auto;
+  font-size:20px;
+  line-height:1.7;
+}
+
+.hero button{
+  margin-top:30px;
+  padding:14px 35px;
+  border:none;
+  border-radius:10px;
+  background:#38bdf8;
+  color:white;
+  font-size:18px;
+}
+
+.search-section{
+  padding:70px 8%;
+  text-align:center;
+}
+
+.search-section input{
+  width:80%;
+  max-width:700px;
+  padding:18px;
+  border-radius:10px;
+  border:none;
+  margin-top:20px;
+}
+
+.college-section{
+  padding:80px 8%;
+}
+
+.college-section h2,
+.compare-section h2,
+.courses-section h2,
+.faculty-section h2{
+  text-align:center;
+  margin-bottom:50px;
+  font-size:40px;
+}
+
+.college-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#1e293b;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:25px;
+}
+
+.card-content h3{
+  margin-bottom:15px;
+  color:#38bdf8;
+}
+
+.card-content p{
+  margin-bottom:10px;
+}
+
+.card button{
+  margin-top:15px;
+  padding:10px 25px;
+  border:none;
+  border-radius:10px;
+  background:#38bdf8;
+  color:white;
+}
+
+.compare-section{
+  padding:80px 8%;
+  background:#111827;
+}
+
+.compare-box{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.compare-card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:15px;
+  width:320px;
+}
+
+.compare-card ul{
+  margin-top:20px;
+}
+
+.compare-card li{
+  margin-bottom:12px;
+}
+
+.vs{
+  font-size:40px;
+  font-weight:bold;
+  color:#38bdf8;
+}
+
+.courses-section{
+  padding:80px 8%;
+}
+
+.course-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.course-card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:15px;
+}
+
+.faculty-section{
+  padding:80px 8%;
+  background:#111827;
+}
+
+.faculty-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.faculty-card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:15px;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  background:#020617;
+}
+
+footer h2{
+  margin-bottom:15px;
+  color:#38bdf8;
+}
+
+@media(max-width:768px){
+
+  header{
+    flex-direction:column;
+  }
+
+  nav{
+    margin-top:15px;
+  }
+
+  .hero-content h1{
+    font-size:36px;
+  }
+
+  .hero-content p{
+    font-size:17px;
+    padding:0 20px;
+  }
+
+}
+```
+
+---
+
+# GitHub Upload Process
+
+1. Create these 2 files:
+
+* index.html
+* style.css
+
+2. Upload both files to GitHub repository.
+
+3. GitHub → Settings → Pages
+
+4. Select:
+
+* Deploy from branch
+* main branch
+* /(root)
+
+5. Save.
+
+6. Wait 1–2 minutes.
+
+7. Website Link:
+
+[https://yourusername.github.io/](https://yourusername.github.io/)
+
+---
+
+# Future Features You Can Add
+
+* AI College Recommendation
+* Login System
+* Student Dashboard
+* College Ranking Filter
+* AI Chatbot
+* Compare Unlimited Colleges
+* JEE/NEET Rank Predictor
+* College Cutoff Database
+* Hostel Information
+* Scholarship Section
+* Online Counseling
+* Dark Mode
+* Mobile App
+*
